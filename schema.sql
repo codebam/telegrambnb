@@ -11,6 +11,7 @@ CREATE TABLE IF NOT EXISTS Listing (
 	desc TEXT NOT NULL,
 	price TEXT NOT NULL,
 	images TEXT NOT NULL,
+	tags TEXT NOT NULL,
 	FOREIGN KEY (user_id) REFERENCES User (id),
 	PRIMARY KEY(id)
 );
